@@ -1,0 +1,3 @@
+/ HomeR GET POST
+/file/#String PreviewR GET
+/file/#String/download DownloadR GET

@@ -1,0 +1,20 @@
+Default: &defaults
+  database: FilerServer.sqlite3
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: FilerServer_test.sqlite3
+  <<: *defaults
+
+Staging:
+  database: FilerServer_staging.sqlite3
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: FilerServer_production.sqlite3
+  poolsize: 100
+  <<: *defaults
